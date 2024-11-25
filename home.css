@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+        "sidebar body" 1fr / auto 1fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1B1B1B;
+    height: 100vh;
+    width: 30vh;
+    border-right: 1px solid #252525;
+}
+
+.body {
+    grid-area: body;
+    background-color: #0e0e0e;
+}
+
+body {
+    margin: 0;
+    font-family: "JetBrains Mono", serif;
+    
+}
+
+.logo {
+    margin: 20px;
+}
+
+/* Container das Tabs */
+.tabs-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+/* Estilo das Tabs (as guias de navegação) */
+.tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+/* Estilo da Tab ativa */
+.tab.active {
+    background-color: #7f57f1;
+    color: white;
+}
+
+/* Estilo do conteúdo das Tabs */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    height: 95vh;
+}
+
+.tab-content.active {
+    display: block;
+}
+/* Container geral */
+.breadcrumb {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Lista de itens do breadcrumb */
+  .breadcrumb-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4B5563; /* Cor padrão cinza */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #3B82F6; /* Azul ao passar o mouse */
+  }
+  
+  .breadcrumb-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B7280; /* Cor para o item atual */
+  }
+  
+  /* Ícone de "Home" */
+  .home-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  /* Ícone do separador (seta) */
+  .separator-icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    color: #D1D5DB; /* Cor dos separadores */
+  }
+  
+  /* Estilo do item atual (não clicável) */
+  .breadcrumb-item.current .breadcrumb-link {
+    color: #6B7280; /* Cor para o item atual */
+  }
+  
+  /* Separador entre os itens */
+  .breadcrumb-separator {
+    display: flex;
+    align-items: center;
+  }
+  

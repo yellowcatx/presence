@@ -1,0 +1,38 @@
+
+Todo:
+  1. Cadastro de Usuários (primeiro)
+
+  No cadastro, você vai armazenar informações básicas como:
+  
+      Nome - FEITO
+      Email - FEITO
+      Senha (se for necessário autenticação) 
+      Talvez um ID ou CPF para identificação única.
+  
+  Esses dados servem como base para identificar quem pode assinar a lista de presença.
+
+  2. Lista de Presença (depois)
+
+  Depois de cadastrar os usuários, você cria a funcionalidade para registrar:
+  
+      Data
+      Horário de entrada
+      Horário de saída (opcional)
+      Talvez uma referência ao ID do usuário cadastrado.
+  
+  Essa lista vai "linkar" cada registro de presença com um usuário previamente cadastrado. Isso evita que pessoas não autorizadas assinem.
+  
+  
+  Como organizar no projeto?
+
+    Cadastro:
+        Crie um formulário para o usuário preencher os dados de cadastro.
+        Salve essas informações em um banco de dados ou em um arquivo JSON.
+
+    Presença:
+        Use o ID ou email do usuário cadastrado para registrar a entrada e a saída.
+        Certifique-se de que só pessoas cadastradas possam marcar presença.
+
+    Relação entre os dois:
+        Quando for registrar a presença, o sistema valida se o usuário está cadastrado.
+        Assim, a presença fica vinculada ao cadastro.
